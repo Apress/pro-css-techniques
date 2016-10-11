@@ -1,0 +1,22 @@
+br {
+    clear:  both;
+}
+
+label { 
+    display:  block;
+    float:  left;
+    clear:  left;
+    width:  9em;
+    padding-right:  1em;
+    text-align:  right;
+    line-height:  1.8em;
+}
+
+input {
+    display:  block;
+    float:  left;
+}
+
+fieldset#credit_card label {
+    line-height:  1.2em;
+}

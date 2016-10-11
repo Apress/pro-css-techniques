@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 6 Example: Easy Float Clearing</title>
+	<style type="text/css" media="screen">
+		body {
+			padding:.5em;
+		}
+		.container {
+			margin-bottom:75px;
+			padding:1em;
+			background-color:#eee;
+			border:3px solid #ddd;
+		}
+		.floatedbox {
+			float:left;
+			width:125px;
+			height:145px;
+			margin-right:1em;
+			padding:0 10px;
+			background-color:#fff;
+			border:3px solid #bbb;
+		}
+		
+		.clearfix:after {
+		    content: "."; 
+		    display: block; 
+		    height: 0; 
+		    clear: both; 
+		    visibility: hidden;
+		}
+
+		/* Hides from IE-mac \*/
+		* html .clearfix {height: 1%;}
+		/* End hide from IE-mac */
+	</style>
+	
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="floatedbox">
+			<p>floated box</p>
+		</div>
+		<h3>Container 1</h3>
+		<p>(<em>without</em> easy clearing)</p>
+	</div>
+
+	<div class="clearfix container"> 
+		<div class="floatedbox">
+			<p>floated box</p>
+		</div>
+		<h3>Container 2</h3>
+		<p>(<em>with</em> easy clearing)</p>
+	</div>
+
+</body>
+</html>

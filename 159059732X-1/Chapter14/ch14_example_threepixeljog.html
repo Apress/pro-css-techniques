@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 14 Example: IE/Win Three Pixel Jog Bug</title>
+	
+	<style type="text/css" media="screen">
+		body {
+			margin: 0;padding: 0;
+			font-family: sans-serif;
+			border: 10px solid #999;
+		}
+		
+		#floated {
+			float: left;
+			width: 300px;
+			height: 50px;
+			background: #ccc;
+		}
+		
+		#notfloated {
+			margin-left: 300px;
+			background: #eee;
+		}
+	</style>
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="ch14_example_threepixeljog_iehacks.css" type="text/css" />
+	<![endif]-->
+</head>
+
+<body>
+	<div id="container">
+		<div id="floated">
+			floated div
+		</div>
+		<div id="notfloated">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		</div>
+	</div>
+</body>
+</html>

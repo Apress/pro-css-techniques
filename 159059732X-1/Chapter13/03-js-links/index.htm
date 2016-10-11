@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Write out link hrefs for print</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+function findLinks()
+{
+var el = document.getElementsByTagName("a");
+for (i=0;i<el.length;i++)
+{
+href = el[i].getAttribute("href");
+var newEl = document.createElement("span");
+var newElText = document.createTextNode(" (" + href + ")");
+newEl.appendChild(newElText);
+el[i].appendChild(newEl);
+}
+}
+window.onload=findLinks;
+</script>
+<style type="text/css">
+#bodycontent a span {display:none;}
+@media print
+  {
+  #bodycontent a span {display:inline;}
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Write out link hrefs for print</h1>
+<div id="bodycontent">
+<p><a href="http://lloydi.com/blog/">This is lloydi's blog</a>. What a shameful plug for a such a lousy web page. You might find <a href="http://www.flickr.com/photos/ianlloyd/">his flickr photos</a> of more interest to be honest.</p>
+</div>
+</body>
+</html>

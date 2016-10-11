@@ -1,0 +1,5 @@
+/* fix doubled float-margin bug */
+
+#float {
+	display: inline;
+}

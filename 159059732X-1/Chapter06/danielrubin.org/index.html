@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>daniel rubin dot org</title>
+	
+	<style type="text/css" media="screen">
+		html {
+			height: 100%;
+		}
+		body {
+			background: #930 url(bg_body.gif) no-repeat center bottom;
+			margin: 0;padding: 0;
+			text-align: center;
+			min-width: 832px;
+			font-family: 'hoefler text', georgia, serif;
+		}
+		#superfluous {
+			background: url(bg_superfluous.gif) no-repeat left top;
+			height: 594px;
+		}
+		#wrapper {
+			width: 800px;
+			margin: 0 auto;
+			padding: 25px 0 0;
+		}
+		#header {
+			margin: 0 0 -20px;
+		}
+		#header h1 {
+			background: url(logo.gif) no-repeat;
+			width: 245px;
+			height: 195px;
+			margin: 0 auto;padding: 0;
+			text-indent: -5000px;
+		}
+		
+		/* the third, centered column */
+		#content {
+			width: 280px;
+			margin: 0 auto;
+		}
+		
+		#navigation {
+			background: url(bg_navigation.png) no-repeat center top;
+			height: 360px;
+		}
+		#navigation ul {
+			list-style: none;
+			margin: 0 auto;padding: 2.5em 0 0;
+			font-size: 30px;
+			line-height: 1.4;
+			letter-spacing: -1.5pt;
+			text-align: left;
+		}
+		#navigation ul li {
+			margin: 0 0 0 22px;padding: 0;
+		}
+		#navigation a {
+			background: url(list_hover.png) no-repeat 0 -100px;
+			padding: 0 0 0 32px;
+			color: #996;
+			text-decoration: none;
+		}
+		#navigation a:hover {
+			background-position: 0 50%;
+			color: #663;
+		}
+		
+		#footer {
+			margin: 0;
+			color: #6d1800;
+			font-size: 75%;
+		}
+		#footer a {
+			color: #6d1800;
+			text-decoration: none;
+		}
+		#footer a:hover {
+			border-bottom: 1px solid;
+		}
+		
+		#col1 {
+			float: left;
+			width: 240px;
+			margin: 30px 16px 0 0;
+		}
+		#col2 {
+			float: right;
+			width: 240px;
+			margin: 30px 0 0 16px;
+		}
+		
+		#col1 p,
+		#col2 p {
+			margin: 0 0 16px;padding: 0;
+			font-size: 24px;
+		}
+		#col1 p a,
+		#col2 p a {
+			display: block;
+			background-color: #661600;
+			background-position: -5000px;
+			background-repeat: no-repeat;
+			border: 8px solid #842800;
+			padding: 1.1em 0 0em;
+			color: #ffc;
+			text-decoration: none;
+			letter-spacing: -1pt;
+			text-shadow: #4d1100 2px 2px 1px;
+		}
+		#col1 p a:hover,
+		#col2 p a:hover {
+			background-color: #842800;
+			background-repeat: no-repeat;
+			border-color: #661600;
+		}
+		
+		#col1 p a .iama,
+		#col2 p a .iama {
+			visibility: hidden;
+			display: block;
+		}
+		#col1 p a:hover .iama,
+		#col2 p a:hover .iama {
+			visibility: visible;
+			color: #b37357;
+		}
+		
+		#col1 p a .hide,
+		#col2 p a .hide {
+			visibility: hidden;
+			display: block;
+			font-size: 60%;
+			line-height: 1.3;
+			padding: 0 1em 1em;
+		}
+		#col1 p a:hover .hide,
+		#col2 p a:hover .hide {
+			visibility: visible;
+			color: #ffc;
+		}
+
+		#col1 p#top1 a { background-image: url(bg_box_top1.gif); }
+		#col2 p#top2 a { background-image: url(bg_box_top2.gif); }
+		#col1 p#bottom1 a { background-image: url(bg_box_bottom1.gif); }
+		#col2 p#bottom2 a { background-image: url(bg_box_bottom2.gif); }
+		
+		#col1 p#top1 a:hover,
+		#col2 p#top2 a:hover { background-position: top; }
+		#col1 p#bottom1 a:hover,
+		#col2 p#bottom2 a:hover { background-position: bottom; }
+	</style>
+	
+	<!--[if lte IE 6]>
+		<style type="text/css" media="screen">
+			#header { margin-bottom: -10px; }
+			#navigation { background-image: url(bg_navigation.gif); }
+			#navigation ul { padding-top: 2em; }
+			#footer { font-size: 65%; }
+			#col1, #col2 { margin-top: 15px; }
+			body #col1 p a, body #col2 p a { line-height: 1; }
+			#col1 p a .hide, #col2 p a .hide { font-size: 50%;padding-bottom: 1.5em; }
+		</style>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="superfluous">
+		<div id="wrapper">
+			<div id="header">
+				<h1>Dan Rubin</h1>
+			</div>
+			
+			<div id="col1">
+				<p id="top1"><a href="#"><span class="iama">I am a</span> Designer <span class="hide">I design beautiful, usable interfaces for screen, plus some print work</span></a></p>
+				
+				<p id="bottom1"><a href="#"><span class="iama">I am a</span> Programmer <span class="hide">I use web standards to promote forward-compatibiltiy and accessibility</span></a></p>
+			</div>
+			
+			<div id="col2">
+				<p id="top2"><a href="#"><span class="iama">I am a</span> Singer <span class="hide">I sing a cappella, barbershop harmony, and even some solo stuff</span></a></p>
+				
+				<p id="bottom2"><a href="#"><span class="iama">I am a</span> Writer <span class="hide">I write about design and code for Apress, friends of ED and on my blog</span></a></p>
+			</div>
+			
+			<div id="content">
+				<div id="navigation">
+					<ul>
+						<li><a href="http://superfluousbanter.org/">Read my blog &raquo;</a></li>
+						<li><a href="http://webgraph.com/">See my work &raquo;</a></li>
+						<li><a href="http://roundersquartet.com/">Hear me sing &raquo;</a></li>
+						<li><a href="http://flickr.com/photos/danrubin/">Browse my pics &raquo;</a></li>
+						<li><a href="http://myspace.com/danielstephenrubin">My MySpace &raquo;</a></li>
+						<li><a href="mailto:dan@danielrubin.org">Send me email &raquo;</a></li>
+					</ul>
+				</div>
+				<p id="footer">&copy; 2006 <a href="http://superfluousbanter.org/">Daniel S. Rubin</a>. Logo by <a href="http://antonpeck.com/">Anton Peck</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

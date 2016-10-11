@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 14 Example: IE/Win Doubled Float-Margin Bug</title>
+	
+	<style type="text/css" media="screen">
+		body {
+			margin: 0;padding: 0;
+			font-family: sans-serif;
+			border: 10px solid #999;
+		}
+		
+		#float {
+			float: left;
+			margin-left: 100px;
+			width: 200px;
+			height: 150px;
+			background: #ddd;
+			text-align: center;
+		}
+		
+		p {
+			margin-top: 60px;
+		}
+		
+		.clear {
+			clear: both;
+		}
+	</style>
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="ch14_example_doubledfloatmargin_iehacks.css" type="text/css" />
+	<![endif]-->
+</head>
+
+<body>
+	<div id="float">
+		<p>floated div</p>
+	</div>
+	<div class="clear"><!-- clears the float above --></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body, div, img, h1, h2, h3, ul, ol, li, a, form,
+div#breadcrumb,
+div#header,
+body#cols3 #content-wrapper
+{
+position:static;
+float:none;
+padding:0;
+margin:0;
+}
+#headerlinks, #headersearch, #tablinks, #navigation, #related, #footer 
+{
+display:none;
+}
+/* Minor tweaks */
+h1
+{
+background:none !important;height:33px !important;
+}
+#breadcrumb ul li ul li
+{
+padding-left:14px !important;
+}

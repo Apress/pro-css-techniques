@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Image hover effects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+/* Example 1 - simple image swap */
+.ex1
+{
+display:block;
+width:200px;
+padding:10px;
+border:1px solid black;
+margin:0 0 10px 0;
+text-decoration:none;
+text-align:center;
+background:#fff url(stars-dim.gif) no-repeat center center;
+}
+.ex1:hover
+{
+border:1px dotted red;
+background:#fff url(stars.gif) no-repeat center center;
+}
+
+/* Example 2 - Making use of contextual selector */
+div.ex2 a
+{
+display:block;
+width:200px;
+padding:10px;
+border:1px solid black;
+margin:0 0 10px 0;
+text-decoration:none;
+text-align:center;
+background:#fff url(stars-dim.gif) no-repeat center center;
+}
+div.ex2 a:hover
+{
+border:1px dotted red;
+background:#fff url(stars.gif) no-repeat center center;
+}
+
+/* Example 3 - 'Sprites' technique */
+.ex3
+{
+background:#fff url(all-stars.gif) no-repeat 0 0;
+display:block;
+height:15px;
+width:17px;
+}
+.ex3:hover
+{
+background:#fff url(all-stars.gif) no-repeat -17px 0;
+}
+
+/* Example 4 - 'Remote' Image Swapping */
+#ex4:hover, #ex5:hover, #ex6:hover
+{
+/* these styles here for benefit of screenshot in book - B&W */
+font-weight:bold;
+text-decoration:none;
+text-transform:uppercase;
+}
+#ex4:hover span
+{
+background: url(metro.jpg) no-repeat;
+display:block;
+width:100px;
+height:100px;
+position:absolute;
+top:450px;
+left:300px;
+}
+#ex5:hover span
+{
+background: url(tower.jpg) no-repeat;
+display:block;
+width:100px;
+height:100px;
+position:absolute;
+top:450px;
+left:400px;
+}
+#ex6:hover span
+{
+background: url(clock.jpg) no-repeat;
+display:block;
+width:100px;
+height:100px;
+position:absolute;
+top:450px;
+left:500px;
+}
+
+
+/* Example 5 - 'Remote' Image Swapping - using sprites technique and a preloader */
+#ex7:hover, #ex8:hover, #ex9:hover
+{
+/* these styles here for benefit of screenshot in book - B&W */
+font-weight:bold;
+text-decoration:none;
+text-transform:uppercase;
+}
+#imagepreload { background-image: url(prague-big.jpg); }
+#ex7:hover span
+{
+background: url(prague-big.jpg) no-repeat;
+display:block;
+width:100px;
+height:100px;
+position:absolute;
+top:550px;
+left:300px;
+}
+#ex8:hover span
+{
+background: url(prague-big.jpg) no-repeat -100px 0;
+display:block;
+width:100px;
+height:100px;
+position:absolute;
+top:550px;
+left:400px;
+}
+#ex9:hover span
+{
+background: url(prague-big.jpg) no-repeat; -200px 0;
+display:block;
+width:100px;
+height:100px;
+position:absolute;
+top:550px;
+left:500px;
+}
+</style>
+</head>
+
+<body>
+<h1>Image Hover effects</h1>
+
+<h2>Simple Image Swap</h2>
+<div><a href="nowhere.html" class="ex1">Hover over me</a></div>
+<div><a href="nowhere.html" class="ex1">Hover over me</a></div>
+
+<h2>Simple Image Swap - Using Contextual Selector</h2>
+
+<div class="ex2">
+<div><a href="nowhere.html">Hover over me</a></div>
+<div><a href="nowhere.html">Hover over me</a></div>
+</div>
+
+<h2>'Sprites' technique</h2>
+
+<a href="nowhere.html" class="ex3"></a>
+
+<h2>'Remote' Image Swapping</h2>
+
+<ul>
+<li><a href="nowhere.html" id="ex4">Link one<span></span></a></li>
+<li><a href="nowhere.html" id="ex5">Link two<span></span></a></li>
+<li><a href="nowhere.html" id="ex6">Link three<span></span></a></li>
+</ul>
+
+<h2>'Remote' Image Swapping - using sprites technique and a preloader</h2>
+
+<span id="imagepreload"></span>
+<ul>
+<li><a href="nowhere.html" id="ex7">Link one<span></span></a></li>
+<li><a href="nowhere.html" id="ex8">Link two<span></span></a></li>
+<li><a href="nowhere.html" id="ex9">Link three<span></span></a></li>
+</ul>
+</body>
+</html>

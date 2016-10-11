@@ -1,0 +1,105 @@
+   /* In the body element, we set our base font size 
+       to 62.5% and set up our initial font. */
+    body {
+      font-family: Constantia, Georgia, "Times New Roman", serif;
+      font-size:  62.5%; 
+      color:  #1a1a1a;
+    }
+    
+    /* div#content contains all of our text. here, we set
+       the mix and max width so that our line lengths 
+       never get too long or too short. */
+    div#content {
+      min-width:  20em;
+      max-width:  40em;
+      font-size:  1.4em;
+      width:  75%;
+      margin:  6em auto;
+    }
+  
+    /* Some base styles for our headers. Note the
+       smaller bottom margin, capitalization, and
+       kerning (letter-spacing ) */
+    h1, h2, h3 {
+      margin:  1em 0 .25em 0;
+      font-family:  Calibri, Helvetica, Arial, sans-serif;
+      text-transform:  capitalize;
+      letter-spacing:  -.05em;
+    }
+    
+    /* Specific styles for h1 and h2 */
+    h1 { font-size:  2em; }
+    h2 { font-size:  1.66em; color:  #666; }
+    
+    /* Let's put a decorative flueron before h2s */
+    h2:before { 
+      content: "\2767"; 
+      margin-right: 0.5em;
+      margin-left:  -1.25em;
+    }
+    
+    /* For h3, we'll use a different color and font, all uppercase, 
+       and without the tighter letter-spacing */
+    h3 { 
+      font-size:  1em;
+      font-family: Constantia, Georgia, "Times New Roman", serif;
+      font-weight:  normal;
+      text-transform:  uppercase;
+      letter-spacing:  0;
+      color:  #cc0000;
+    }
+  
+    /* Base styles for paragraphs. We'll remove the margins
+       and increase the leading (line-height) */
+    p {
+      margin:  0;
+      line-height:  1.4;
+    }
+    
+    /* Paragraphs after other paragraphs should be indented. */
+    p + p { text-indent:  1.5em; }
+    
+    /* Make our intro paragraph a little bigger and with small-caps
+       on the first line. Also, justify the text. */
+    p.intro {
+      text-align:  justify;
+      font-size:  1.33em;
+      line-height:  1.2;
+    }
+    p.intro:first-line { font-variant:  small-caps; }
+    
+    /* Make the first letter of our intro be a drop cap. 
+       We'll use a much larger font-size and float the letter 
+       to the left to acomplish this. */
+    p.intro:first-letter {
+      float:  left;
+      font-size:  3.5em;
+      line-height:  1;
+      color:  #cc0000;
+      margin:  0 .1em 0 0;
+    }
+    
+    /* Give our blockquotes some margin, and make them italic. */
+    blockquote { 
+      font-style: italic; 
+      margin: 2em 5em;
+    }
+  
+    /* Paragraphs within blockquotes will get our sans-serif font
+       and be a lighter grey */
+    blockquote p {
+      text-indent:  -.4em;
+      color:  #666;
+      font-family:  Calibri, Helvetica, Arial, sans-serif;
+    }
+  
+    /* Make CSS generate and include quotation marks before and after
+      the paragraph. */
+    blockquote p:before { 
+      content:  "\201C";
+      text-indent:  -.5em;
+    }
+    blockquote p:after { 
+      content:  "\201D";  
+    }
+  

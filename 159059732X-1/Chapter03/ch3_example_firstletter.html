@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 3 Example: First-letter Pseudo-element</title>
+	<style type="text/css" media="screen">
+		body {
+			padding:.5em;
+			font-family:"lucida grande", sans-serif;
+		}
+		
+		p {
+			font-size:100%;
+		}
+
+		p#dropcap:first-letter {
+			font-size:300%;
+			font-weight:bold;
+			float:left;
+		}
+		
+		p#initialcap:first-letter {
+			font-size:400%;
+			font-weight:bold;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	<p id="dropcap">Gorillas don’t always eat bananas, all cows eat grass, good boys do fine always, and fat cops get donuts after every bust.</p>
+	
+	<p id="initialcap">Gorillas don’t always eat bananas, all cows eat grass, good boys do fine always, and fat cops get donuts after every bust.</p>
+</body>
+</html>

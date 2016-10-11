@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Float problem explained - everything floated</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+#parent1
+{
+border:5px solid purple;
+float:left;
+}
+#parent2
+{
+border:5px solid silver;
+float:left;
+}
+#parent3
+{
+border:5px solid yellow;
+float:left;
+}
+#parent4
+{
+border:5px solid blue;
+padding:10px;
+float:left;
+}
+.floatleft
+{
+border:5px solid red;
+float:left;
+width:200px;
+background:white;
+}
+.floatright
+{
+border:5px solid green;
+float:right;
+width:200px;
+background:white;
+}
+</style>
+</head>
+
+<body>
+<div id="parent1">
+<p>This is the first parent container</p>
+ <div id="parent2">
+ <p>This is the second parent container</p>
+  <div id="parent3">
+  <p>This is the third parent container</p>
+   <div id="parent4">
+   <p>This is the fourth parent container</p>
+   <p class="floatleft">This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.</p>
+   <p class="floatright">This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.This is floated content.</p>
+   </div>
+  </div>
+ </div>
+</div>
+</body>
+</html>

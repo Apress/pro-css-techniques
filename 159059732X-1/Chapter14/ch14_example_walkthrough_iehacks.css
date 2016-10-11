@@ -1,0 +1,30 @@
+/* fix doubled float margin bug */
+
+.float-wrapper { display:inline; }
+
+
+/* fix three pixel jog bug */
+
+.float-wrapper { margin-right:-3px; }
+.third-col { height:1%;margin-left:0; }
+
+
+/* fix absolute/relative positioning bug */
+
+#header { height:1%; }
+#header h1 { padding-top: .75em; }
+
+
+/* remove margin from .float-wrapper since IE doesn't need it */
+
+.float-wrapper { margin-bottom:0; }
+
+
+/* fix white space bug and peek-a-boo bug */
+
+ul.subnav li,
+ul.subnav a { height:1%; }
+
+
+/* clearfix */
+.clearfix { height: 1%; }

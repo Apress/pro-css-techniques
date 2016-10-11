@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Chapter 6 Example: Thisaway Blogger Template</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta name="generator" content="Blogger" />
+	<link rel="alternate" type="application/atom+xml" title="Thisaway Test (Atom 0.3)" href="http://thisawaytest.blogspot.com/atom.xml" />
+	<link rel="alternate" type="application/rss+xml" title="Thisaway Test (RSS 2.0)" href="http://thisawaytest.blogspot.com/rss.xml" />
+	<link rel="service.post" type="application/atom+xml" title="Thisaway Test" href="https://www.blogger.com/atom/11225498" />
+	<link rel="service.post" type="application/atom+xml" title="Thisaway Test (Atom 1.0)" href="http://www.blogger.com/feeds/11225498/posts/full" />
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=11225498" />
+	<meta name="ROBOTS" content="NOINDEX,NOFOLLOW" />
+	<style type="text/css">
+	@import url("http://www.blogger.com/css/blog_controls.css");
+	@import url("http://www.blogger.com/dyn-css/authorization.css?blogID=11225498");
+	</style>
+
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name: 	  Thisaway (Blue)
+Designer: Dan Rubin
+URL:      www.superfluousbanter.org
+Date:     2006-08-13
+----------------------------------------------- */
+
+
+/* global
+----------------------------------------------- */
+body {
+margin: 0;
+padding: 0;
+text-align: center;
+min-width: 760px;
+background: #4386ce url(http://www.blogblog.com/thisaway_blue/bg_body.gif) repeat-x left top;
+font-family: helvetica, arial, verdana, "trebuchet ms", sans-serif;
+color: #204063;
+}
+
+blockquote {
+margin: 0;
+padding: 0 10px 0 10px;
+border-left: 6px solid #d8e7f7;
+border-right: 6px solid #d8e7f7;
+color: #477fba;
+}
+
+code {
+color: #809eba;
+}
+
+hr {
+display: none;
+}
+
+
+/* layout
+----------------------------------------------- */
+@media all {
+  #wrapper {
+    margin: 0 auto;
+    width: 760px;
+    text-align: left;
+    }
+
+  #blog-header {
+    padding-bottom: 15px;
+    background: url(http://www.blogblog.com/thisaway_blue/bg_header_bottom.gif) no-repeat left bottom;
+    }
+
+  #blog-header div {
+    background: #204063 url(http://www.blogblog.com/thisaway_blue/bg_header.gif) repeat-x left bottom;
+    }
+
+  #main-wrapper {
+    position: relative;
+    width: 760px;
+    background: #f7f0e9 url(http://www.blogblog.com/thisaway_blue/bg_main_wrapper.gif) repeat-y left top;
+    }
+
+  #main-content {
+	/* setting display:inline fixes a strange ie margin bug - via: http://www.positioniseverything.net/explorer/floatIndent.html */
+    display: inline;
+    float: left;
+    margin: 0 0 0 3px;
+    padding: 0;
+    width: 483px;
+    }
+
+  #content-wrapper {
+    padding: 22px 0 0 0;
+    background: url(http://www.blogblog.com/thisaway_blue/bg_content.gif) repeat-x left top;
+    }
+  }
+@media handheld {
+  #wrapper {
+    width: 90%;
+    }
+
+  #blog-header {
+    background:none;
+    }
+
+  #blog-header div {
+    background: #204063;
+    }
+
+  #main-wrapper {
+    width: 100%;
+    background: #f7f0e9;
+    }
+
+  #main-content {
+    float: none;
+    width: 100%;
+    }
+
+  #content-wrapper {
+    background:none;
+    }
+  }
+
+.post {
+margin: 0 16px 14px 29px;
+padding: 0;
+border-bottom: 3px solid #d8e7f7;
+}
+
+#comments {
+margin: 0 16px 14px 29px;
+padding: 10px;
+border: 1px solid #cedef0;
+background-color: #e4ecf5;
+}
+
+@media all {
+  #sidebar-wrapper {
+	/* setting display:inline fixes a strange ie margin bug - via: http://www.positioniseverything.net/explorer/floatIndent.html */
+    display: inline;
+    float: right;
+    margin: 0 3px 0 0;
+    width: 269px;
+    color: #1c4676;
+    background: url(http://www.blogblog.com/thisaway_blue/bg_sidebar.gif) repeat-x left top;
+    }
+
+  #sidebar {
+    padding: 7px 11px 0 14px;
+    background: url(http://www.blogblog.com/thisaway_blue/bg_sidebar_arrow.gif) repeat-y 179px 0;
+    }
+
+  #blog-footer {
+    padding-top: 15px;
+    background: url(http://www.blogblog.com/thisaway_blue/bg_footer_top.gif) no-repeat left top;
+    }
+
+  #blog-footer div {
+    background: #152e49 url(http://www.blogblog.com/thisaway_blue/bg_footer.gif) repeat-x left top;
+    }
+  }
+@media handheld {
+  #sidebar-wrapper {
+    float: none;
+    width: 100%;
+    background:none;
+    }
+
+  #sidebar {
+    background:none;
+    }
+
+  #blog-footer {
+    background:none;
+    }
+
+  #blog-footer div {
+    background: #152e49;
+    }
+  }
+
+#profile-container {
+  margin-bottom: 20px;
+  }
+
+
+/* headings
+----------------------------------------------- */
+#blog-header h1 {
+margin: 0;
+padding: 26px 0 0 84px;
+color: #eef6fe;
+font-size: 30px;
+line-height: 25px;
+background: url(http://www.blogblog.com/thisaway_blue/icon_header.gif) no-repeat 16px 26px;
+}
+
+h2.date-header {
+margin: 0;
+padding: 0 0 0 29px;
+font-size: 10px;
+text-transform: uppercase;
+color: #8facc8;
+background: url(http://www.blogblog.com/thisaway_blue/icon_date.gif) no-repeat 13px 0;
+}
+
+.date-header span {
+margin: 0 0 0 5px;
+padding: 0 25px 0 25px;
+background: url(http://www.blogblog.com/thisaway_blue/bg_date.gif) no-repeat 0 0;
+}
+
+h2.sidebar-title {
+padding: 1px 0 0 36px;
+font-size: 14px;
+color: #809fbd;
+background: url(http://www.blogblog.com/thisaway_blue/icon_sidebar_heading.gif) no-repeat 0 45%;
+}
+
+#profile-container h2.sidebar-title {
+color: #527595;
+background: url(http://www.blogblog.com/thisaway_blue/icon_sidebar_profileheading.gif) no-repeat 0 45%;
+}
+
+.post h3.post-title {
+margin: 13px 0 0 0;
+padding: 0;
+font-size: 18px;
+color: #477fba;
+}
+
+#comments h4 {
+margin-top: 0;
+font-size: 16px;
+}
+
+
+/* text
+----------------------------------------------- */
+#blog-header p {
+margin: 0;
+padding: 7px 16px 0 84px;
+color: #eef6fe;
+font-size: 10px;
+font-weight: bold;
+line-height: 14px;
+}
+
+.post-body div {
+font-size: 13px;
+line-height: 18px;
+margin: 0;
+height: 1%;
+overflow: visible;
+}
+
+.post-body blockquote {
+margin: 10px 0px;
+}
+
+p.post-footer {
+font-size: 11px;
+color: #809fbd;
+text-align: right;
+}
+
+p.post-footer em {
+display: block;
+float: left;
+text-align: left;
+font-style: normal;
+}
+
+p.comment-data {
+font-size: 12px;
+}
+
+.comment-body p {
+font-size: 12px;
+line-height: 17px;
+}
+
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+#sidebar p {
+font-size: 12px;
+line-height: 17px;
+margin-bottom: 20px;
+}
+
+#sidebar p.profile-textblock {
+clear: both;
+margin-bottom: 10px;
+}
+
+.profile-link {
+padding: 0 0 0 17px;
+background: url(http://www.blogblog.com/thisaway_blue/icon_profile.gif) no-repeat 0 0;
+}
+
+p#powered-by {
+margin: 0;
+padding: 0;
+}
+
+#blog-footer p {
+margin: 0;
+padding: 0 0 15px 55px;
+color: #eef6fe;
+font-size: 10px;
+line-height: 14px;
+background: url(http://www.blogblog.com/thisaway_blue/icon_footer.gif) no-repeat 16px 0;
+}
+
+
+/* lists
+----------------------------------------------- */
+.profile-data {
+font-size: 13px;
+line-height: 17px;
+}
+
+.post ul {
+padding-left: 32px;
+list-style-type: none;
+font-size: 13px;
+line-height: 18px;
+}
+
+.post li {
+padding: 0 0 4px 17px;
+background: url(http://www.blogblog.com/thisaway_blue/icon_list_item.gif) no-repeat 0 3px;
+}
+
+#comments ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#comments li {
+padding: 0 0 1px 17px;
+background: url(http://www.blogblog.com/thisaway_blue/icon_comment.gif) no-repeat 0 3px;
+}
+
+#sidebar ul {
+margin: 0 0 20px 0;
+padding: 0;
+list-style-type: none;
+font-size: 12px;
+line-height: 14px;
+}
+
+#sidebar li {
+padding: 0 0 4px 17px;
+background: url(http://www.blogblog.com/thisaway_blue/icon_list_item.gif) no-repeat 0 3px;
+}
+
+
+/* links
+----------------------------------------------- */
+a {
+color: #4386ce;
+font-weight: bold;
+}
+
+a:hover {
+color: #2462a5;
+}
+
+a.comment-link {
+/* ie5.0/win doesn't apply padding to inline elements,
+   so we hide these two declarations from it */
+background/* */:/**/url(http://www.blogblog.com/thisaway_blue/icon_comment.gif) no-repeat 0 45%;
+padding-left: 14px;
+}
+
+html>body a.comment-link {
+/* respecified, for ie5/mac's benefit */
+background: url(http://www.blogblog.com/thisaway_blue/icon_comment.gif) no-repeat 0 45%;
+padding-left: 14px;
+}
+
+#sidebar ul a {
+color: #599be2;
+}
+
+#sidebar ul a:hover {
+color: #3372b6;
+}
+
+#powered-by a img {
+border: none;
+}
+
+#blog-header h1 a {
+color: #eef6fe;
+text-decoration: none;
+}
+
+#blog-header h1 a:hover {
+color: #b4c7d9;
+}
+
+h3.post-title a {
+color: #477fba;
+text-decoration: none;
+}
+
+h3.post-title a:hover {
+color: #2a5e95;
+}
+
+
+/* miscellaneous
+----------------------------------------------- */
+.post-photo {
+padding: 3px;
+border: 1px solid #bdd4eb;
+}
+
+.profile-img {
+display: inline;
+}
+
+.profile-img img {
+float: left;
+margin: 0 10px 5px 0;
+padding: 3px;
+border: 1px solid #bdd4eb;
+}
+
+.profile-data strong {
+display: block;
+}
+
+.clear {
+clear: both;
+line-height: 0;
+height: 0;
+} 
+  </style>
+
+
+<!-- --><style type="text/css">@import url(http://www.blogger.com/css/navbar/main.css);
+@import url(http://www.blogger.com/css/navbar/1.css);
+div.b-mobile {display:none;}
+</style>
+
+<script type="text/javascript" src="http://www.blogger.com/js/cookies.common.js"> </script></head>
+
+<body><!-- --><div id="flagi" style="visibility:hidden; position:absolute;" onmouseover="showDrop()" onmouseout="hideDrop()"><div id="flagtop"></div><div id="top-filler"></div><div id="flagi-body">Notify Blogger about objectionable content.<br /><a href="http://help.blogger.com/bin/answer.py?answer=1200"> What does this mean? </a> </div></div><div id="b-navbar"><a href="http://www.blogger.com/" id="b-logo" title="Go to Blogger.com"><img src="http://www.blogger.com/img/navbar/1/logobar.gif" alt="Blogger" width="80" height="24" /></a><div id="b-sms" class="b-mobile"><a href="sms:?body=Hi%2C%20check%20out%20Thisaway%20Test%20at%20thisawaytest.blogspot.com">Send As SMS</a></div><form id="b-search" name="b-search" action="http://search.blogger.com/"><div id="b-more"><a href="http://www.blogger.com/" id="b-getorpost"><img src="http://www.blogger.com/img/navbar/1/btn_getblog.gif" alt="Get your own blog" width="112" height="15" /></a><a id="flagButton" style="display:none;" href="javascript:toggleFlag();" onmouseover="showDrop()" onmouseout="hideDrop()"><img src="http://www.blogger.com/img/navbar/1/flag.gif" name="flag" alt="Flag Blog" width="55" height="15" /></a><a href="http://www.blogger.com/redirect/next_blog.pyra?navBar=true" id="b-next"><img src="http://www.blogger.com/img/navbar/1/btn_nextblog.gif" alt="Next blog" width="72" height="15" /></a></div><div id="b-this"><input type="text" id="b-query" name="as_q" /><input type="hidden" name="ie" value="UTF-8" /><input type="hidden" name="ui" value="blg" /><input type="hidden" name="bl_url" value="thisawaytest.blogspot.com" /><input type="image" src="http://www.blogger.com/img/navbar/1/btn_search_this.gif" alt="Search This Blog" id="b-searchbtn" title="Search this blog with Google Blog Search" onclick="document.forms['b-search'].bl_url.value='thisawaytest.blogspot.com'" /><input type="image" src="http://www.blogger.com/img/navbar/1/btn_search_all.gif" alt="Search All Blogs" value="Search" id="b-searchallbtn" title="Search all blogs with Google Blog Search" onclick="document.forms['b-search'].bl_url.value=''" /><a href="javascript:BlogThis();" id="b-blogthis">BlogThis!</a></div></form></div><script type="text/javascript"><!--
+
+var ID = 11225498;var HATE_INTERSTITIAL_COOKIE_NAME = 'dismissedInterstitial';var FLAG_COOKIE_NAME = 'flaggedBlog';var FLAG_BLOG_URL = 'http://www.blogger.com/flag-blog.g?nav=1&toFlag=' + ID;var UNFLAG_BLOG_URL = 'http://www.blogger.com/unflag-blog.g?nav=1&toFlag=' + ID;var FLAG_IMAGE_URL = 'http://www.blogger.com/img/navbar/1/flag.gif';var UNFLAG_IMAGE_URL = 'http://www.blogger.com/img/navbar/1/unflag.gif';var ncHasFlagged = false;var servletTarget = new Image();
+
+function BlogThis() {Q='';x=document;y=window;if(x.selection) {Q=x.selection.createRange().text;} else if (y.getSelection) { Q=y.getSelection();} else if (x.getSelection) { Q=x.getSelection();}popw = y.open('http://www.blogger.com/blog_this.pyra?t=' + escape(Q) + '&u=' + escape(location.href) + '&n=' + escape(document.title),'bloggerForm','scrollbars=no,width=475,height=300,top=175,left=75,status=yes,resizable=yes');void(0);}
+
+function blogspotInit() {initFlag();}
+
+function hasFlagged() {return getCookie(FLAG_COOKIE_NAME) || ncHasFlagged;}
+
+function toggleFlag() {var date = new Date();var id = 11225498;if (hasFlagged()) {removeCookie(FLAG_COOKIE_NAME);servletTarget.src = UNFLAG_BLOG_URL + '&d=' + date.getTime();document.images['flag'].src = FLAG_IMAGE_URL;ncHasFlagged = false;} else { setBlogspotCookie(FLAG_COOKIE_NAME, 'true');servletTarget.src = FLAG_BLOG_URL + '&d=' + date.getTime();document.images['flag'].src = UNFLAG_IMAGE_URL;ncHasFlagged = true;}}
+
+function initFlag() {document.getElementById('flagButton').style.display = 'inline';if (hasFlagged()) {document.images['flag'].src = UNFLAG_IMAGE_URL;} else {document.images['flag'].src = FLAG_IMAGE_URL;}}
+
+function showDrop() {if (!hasFlagged()) {document.getElementById('flagi').style.visibility = 'visible';}}
+
+function hideDrop() {document.getElementById('flagi').style.visibility = 'hidden';}
+
+function setBlogspotCookie(name, val) {var expire = new Date((new Date()).getTime() + 5 * 24 * 60 * 60 * 1000);var path = '/';setCookie(name, val, null, expire, path, null);}
+
+function removeCookie(name){var expire = new Date((new Date()).getTime() - 1000); setCookie(name,'',null,expire,'/',null);}
+
+ --></script><script type="text/javascript">  blogspotInit();</script><div id="space-for-ie"></div>
+
+<!-- #wrapper for centering the layout -->
+<div id="wrapper">
+
+<!-- Blog Header -->
+<div id="blog-header"><div>
+  	<h1>
+    
+	Thisaway Test
+	
+  </h1>
+  	<p>A test blog to demonstrate problems and solutions with Thisaway, a Blogger template.</p>
+</div></div>
+
+<!-- Begin #main-wrapper - surrounds the #main-content and #sidebar divs for positioning -->
+<div id="main-wrapper">
+
+<!-- Begin #main - This div contains the main-column blog content -->
+<div id="main-content">
+<!-- Begin #content-wrapper -->
+<div id="content-wrapper">
+
+
+
+    
+  <h2 class="date-header">Friday, March 04, 2005</h2>
+  
+  
+  
+  <!-- Begin .post -->
+  <div class="post"><a name="110992125888662253"></a>
+  
+    
+    <h3 class="post-title">
+	 
+	 Lorem ipsum dolor sit
+	 
+    </h3>
+    
+    
+    <div class="post-body">
+    
+      <div>
+      <div style="clear:both;"></div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed hendrerit velit blandit justo. Phasellus tempus neque eu diam. Aliquam nonummy porta dui. Donec massa. Duis ante eros, sagittis sed, fermentum non, consectetuer sed, felis. Integer purus metus, consectetuer vel, nonummy a, posuere at, elit. Nam tempor. Maecenas elementum tincidunt orci. Sed <i>porttitor</i> nonummy massa. Vivamus convallis. Proin a nibh. Morbi quam ante, posuere a, pharetra ac, tempor at, tellus. Aliquam lectus.<br /><br />Cras erat. Aliquam est. Proin adipiscing auctor nunc. Quisque nec urna. Mauris erat mi, posuere vitae, suscipit nec, pretium ac, dolor. Nunc aliquam lacus bibendum tellus. Phasellus elementum, erat a posuere feugiat, sapien enim volutpat lorem, quis tempus dui wisi non quam. Suspendisse nonummy, erat sed aliquam ultricies, lectus eros suscipit ipsum, eget sollicitudin dui massa a lectus. Praesent in mauris ut arcu consectetuer elementum. In hac habitasse platea dictumst. Donec nisl. Nam ligula ligula, eleifend quis, interdum nec, feugiat vitae, lectus. Aliquam volutpat libero a felis. Quisque in lectus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<div style="clear:both; padding-bottom: 0.25em;"></div>
+      </div>
+    
+    </div>
+    
+    <p class="post-footer">
+    	<em>posted by Admin @ <a href="http://thisawaytest.blogspot.com/2005/03/lorem-ipsum-dolor-sit.html" title="permanent link">2:25 AM</a></em> &nbsp;
+    	
+         <a class="comment-link" href="http://www.blogger.com/comment.g?blogID=11225498&amp;postID=110992125888662253"location.href=http://www.blogger.com/comment.g?blogID=11225498&amp;postID=110992125888662253;>1 comments</a>
+      
+ <span class="item-control admin-1213651297 pid-1671261586"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11225498&amp;postID=110992125888662253&amp;quickEdit=true" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  <!-- Begin #comments -->
+ 
+  <!-- End #comments -->
+
+
+
+</div>
+<!-- End #content-wrapper -->
+
+</div>
+<!-- End #main-content -->
+
+
+<!-- Begin #sidebar-wrapper -->
+<div id="sidebar-wrapper">
+<!-- Begin #sidebar -->
+<div id="sidebar">
+ 
+  <!-- Begin #profile-container -->
+     
+     
+     
+  <!-- End #profile -->
+    
+        
+  <h2 class="sidebar-title">Links</h2>
+    <ul>
+    	<li><a href="http://news.google.com/">Google News</a></li>
+    	<li><a href="http://help.blogger.com/bin/answer.py?answer=110">Edit-Me</a></li>
+    	<li><a href="http://help.blogger.com/bin/answer.py?answer=110">Edit-Me</a></li>
+  </ul>
+  
+  
+  
+  <h2 class="sidebar-title">Previous Posts</h2>
+  
+  <ul id="recently">
+    
+        <li><a href="http://thisawaytest.blogspot.com/2005/03/lorem-ipsum-dolor-sit.html">Lorem ipsum dolor sit</a></li>
+     
+  </ul>
+  
+  
+  <h2 class="sidebar-title">Archives</h2>
+  
+  <ul class="archive-list">
+   	  
+    	<li><a href="http://thisawaytest.blogspot.com/2005_03_01_thisawaytest_archive.html">March 2005</a></li>
+	  
+      
+  </ul>
+  
+  
+  
+  <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+
+
+</div>
+<!-- End #sidebar -->
+</div>
+<!-- End #sidebar-wrapper -->
+
+<div class="clear">&nbsp;</div>
+</div>
+<!-- End #main-wrapper -->
+
+<div id="blog-footer"><div>
+	<p><!-- If you'd like, you could place footer information here. -->&nbsp;</p>
+</div></div>
+
+</div>
+<!-- End #wrapper -->
+
+</body>
+</html>

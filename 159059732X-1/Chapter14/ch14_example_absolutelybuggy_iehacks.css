@@ -1,0 +1,5 @@
+/* fix absolute positioning bug */
+
+#container {
+	height: 1%;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 14 Example: Problem Solving Walkthrough (broken)</title>
+	<style type="text/css" media="screen">
+		body {
+			padding:.5em;
+			color:#333;
+			font-family:'lucida grande', sans-serif;
+		}
+		
+		p {
+			padding:.5em;
+		}
+		
+		#header {
+			margin:0 0 .5em;
+			padding:.5em;
+			background-color:#eee;
+			border-bottom:1px solid #999;
+			position:relative;
+		}
+		
+		ul#nav {
+			list-style:none;
+			margin:0;padding:0 .5em 0 0;
+			position:absolute;
+			right:0;
+			bottom:0;
+		}
+		ul#nav li {
+			float:left;
+			margin:0 0 0 .25em;
+			background-color:#ddd;
+			border-width:1px 1px 0;
+			border-style:solid;
+			border-color:#999;
+		}
+		ul#nav a {
+			float:left;
+			padding:.25em .5em;
+		}
+		ul#nav a:hover {
+			background:#ccc;
+		}
+		
+		/* This can be floated left or right */
+		.float-wrapper {
+			float:left;
+			width:49%;
+			margin-left:1%;
+			background-color:#ddd;
+		}
+		
+		/* This can be floated left or right */
+		.first-col {
+			float:right;
+			width:50%;
+			background-color:#999;
+		}
+		
+		/* This gets margined the same direction as div.first-col gets floated */
+		.second-col {
+			margin-right:50%;
+			background-color:#ccc;
+		}
+		
+		/* This gets margined the same direction as div.float-wrap gets floated */
+		.third-col {
+			margin-left:50%;
+			margin-right:1%;
+			background-color:#eee;
+		}
+		
+		#footer {
+			clear:both;
+			margin:.5em 0 0;
+			padding:.5em;
+			background-color:#bbb;
+		}
+		
+		.first-para {
+			float:left;
+		}
+		
+		.second-para {
+			float:right;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div id="header">
+		<h1>Header</h1>
+		<ul id="nav">
+			<li><a href="somepage.html">Nav item 1</a></li>
+			<li><a href="somepage.html">Nav item 2</a></li>
+			<li><a href="somepage.html">Nav item 3</a></li>
+		</ul>
+	</div>
+	
+	<div class="float-wrapper">
+		
+		<div class="first-col">
+	    	<p><strong>First Column</strong></p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+		</div>
+
+		<div class="second-col">
+			<p><strong>Second Column</strong></p>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		
+	</div>
+
+	<div class="third-col">
+		<p><strong>Third Column</strong></p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+
+	<div id="footer">
+		<p class="first-para">First paragraph</p>
+		
+		<p class="second-para">Second paragraph</p>
+	</div>
+</body>
+</html>

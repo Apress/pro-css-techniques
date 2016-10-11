@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 14 Example: Specificity problems</title>
+	
+	<style type="text/css" media="screen">
+		#main #content .item a.readmore {
+			color:red;
+			background-color:yellow;
+		}
+		
+		#wrapper #main #content a {
+			color:green;
+		}
+		
+		#main #content .item ul li a {
+			color:blue;
+			font-weight:bold;
+			background-color:transparent;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="main">
+			<div id="content">
+				<div class="item">
+					<ul>
+						<li>Lorem <a class="readmore" href="nextpage.html">ipsum</a>.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

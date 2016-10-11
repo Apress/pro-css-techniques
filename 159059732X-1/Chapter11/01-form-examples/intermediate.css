@@ -1,0 +1,23 @@
+input {
+    width:  12em;
+}
+
+label {
+    float:  left;
+    margin-right:  1em;
+}
+
+br {
+    clear:  both;
+}
+
+input#state { width:  2em; }
+input#zip { width: 5em; }
+input#card_number { width:  16em; }
+input#expiration { width:  4em; }
+
+input[type=radio],
+input[type=submit],
+input[type=checkbox] {
+    width:  auto;
+}

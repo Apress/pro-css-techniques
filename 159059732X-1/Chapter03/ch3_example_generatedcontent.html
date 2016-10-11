@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 3 Example: :before and :after Pseudo-elements</title>
+	<style type="text/css" media="screen">
+		body {
+			padding:.5em;
+			font-family:"lucida grande";
+		}
+		
+		p.note {
+			font-size:85%;
+			color:#666;
+		}
+
+		p.note:before {
+			content:"[";
+		}
+		p.note:after {
+			content:"]";
+		}
+
+		a[href^='http://']:after { content:" [" attr(href) "]";font-size:90%;font-style:italic;color:#999; }
+		
+		ul li { list-style:none;margin:0;text-indent:-1em; }
+		ul li:before { content:"\2192 \0020"; }
+		
+	</style>
+	
+</head>
+
+<body>
+	<p class="note">Gorillas don’t always eat bananas, all cows eat grass, good boys do fine always, and fat cops get donuts after every bust.</p>
+	
+	<p>Please visit <a href="http://superfluousbanter.org/">my site</a> whenever you get a chance.</p>
+	
+	<ul>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+		<li>List item 4</li>
+	</ul>
+</body>
+</html>

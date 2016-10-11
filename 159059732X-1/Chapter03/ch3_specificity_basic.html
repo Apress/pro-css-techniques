@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 3 Example: Specificity</title>
+	<style type="text/css" media="screen">
+		body {
+			font-family: 'lucida grande', sans-serif;
+		}
+		
+		/* score: 0,0,0,1 */
+		h1 {
+			color:#000;
+		}
+		p {
+			color:#000;
+		}
+		
+		/* score: 0,0,0,2 */
+		div h1 {
+			color:#333;
+		}
+		div p {
+			color:#333;
+		}
+		
+		/* score: 0,0,1,2 */
+		div.module h1 {
+			color:#666;
+		}
+		div.module p {
+			color:#666;
+		}
+		
+		/* score: 0,0,1,1 - this comes later in the stylesheet, but the selector above is more specific; since the 3rd columns are the same, the calculation is based on the 4th column */
+		.module h1 {
+			color:#000;
+		}
+		.module p {
+			color:#000;
+		}
+		
+		/* score: 0,1,0,1 - the same process applies to this as to the Classed <div>s above: removing the 'div' from the selectors below will make them less-specific than another identical rule *with* the 'div' */
+	 	div#content h1 {
+			color:#999;
+		}
+	 	div#content p {
+			color:#999;
+		}
+		
+		/* score: 0,0,0,1 - but !important overrides all, including inline styles - uncomment to see the effects */
+	 	/*
+		h1 {
+			color:#ccc !important;
+		}
+	 	p {
+			color:#ccc !important;
+		}
+		*/
+	</style>
+	
+</head>
+
+<body>
+	<h1>Page Title</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	
+	<div>
+		<h1>Page Title</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	
+	<!-- CLASS overrules ELEMENT -->
+	<div class="module">
+		<h1>Page Title</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	
+	<!-- ID overrules CLASS -->
+	<div id="content" class="module">
+		<h1>Page Title</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	
+	<!-- inline styles overrule everything except !important - these inline styles have a score of 1,0,0,0 -->
+	<div id="content" class="module">
+		<h1 style="color:#ccc;">Page Title</h1>
+		<p style="color:#ccc;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+</body>
+</html>

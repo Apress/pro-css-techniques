@@ -1,0 +1,5 @@
+/* fix white space bug */
+
+ul li a {
+	height: 1%;
+}

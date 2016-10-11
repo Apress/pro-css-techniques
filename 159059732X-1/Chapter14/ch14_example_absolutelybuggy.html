@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Chapter 14 Example: IE/Win Absolute Positioning within a Relative Container (hasLayout)</title>
+	
+	<style type="text/css" media="screen">
+		body {
+			margin: 0;padding: 0;
+			font-family: sans-serif;
+			border: 10px solid #999;
+		}
+		
+		#container {
+			position: relative;
+			margin: 0 15%;
+			border: 10px solid #666;
+			padding-right: 125px;
+		}
+		
+		#absolute {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 100px;
+			height: 100px;
+			background: #ccc;
+			text-align: center;
+		}
+	</style>
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="ch14_example_absolutelybuggy_iehacks.css" type="text/css" />
+	<![endif]-->
+</head>
+
+<body>
+	<div id="container">
+		<div id="absolute">
+			absolutely positioned
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<p><strong>Extra content</strong></p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</body>
+</html>

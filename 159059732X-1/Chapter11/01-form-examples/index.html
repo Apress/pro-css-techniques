@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Example form</title>
+    <link rel="stylesheet" href="reset-min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="basic.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="intermediate.css" type="text/css" media="screen" />
+  </head>
+  
+  <body>
+    <form id="payment_form" action="/path/to/action" method="post">
+      
+      <fieldset id="name">
+        <legend>Name</legend>
+        <label>Title
+          <select id="title1" name="title1">
+            <option selected="selected">Mr.</option>
+            <option>Mrs.</option>
+            <option>Ms.</option>
+          </select>
+        </label>
+        <label>First name
+          <input id="first-name" name="first-name" type="text" />
+        </label>
+        <label>Last name
+          <input id="las-name" name="last-name" type="text" />
+        </label>
+        <br />
+      </fieldset>
+
+      <fieldset id="address">
+        <legend>Address</legend>
+        <label>Street
+          <input id="street" name="street" type="text" />
+        </label>
+        <br />
+        <label>City
+          <input id="city" name="city" type="text" />
+        </label>
+        <label>State
+          <input id="state" name="state" type="text" />
+        </label>
+        <label>Zip code
+          <input id="zip" name="zip" type="text" />
+        </label>
+        <br />
+        <label>Country
+          <input id="country" name="country" type="text" />
+        </label>
+        <br />
+      </fieldset>
+
+      <fieldset id="payment">
+        <legend>Payment option</legend>
+          <fieldset id="credit_card">
+            <legend>Credit card</legend>
+            <label><input id="visa" name="visa" type="radio" /> Visa</label>
+            <label><input id="mastercard" name="mastercard" type="radio" /> Mastercard</label>
+            <label><input id="discover" name="discover" type="radio" /> Discover</label>
+            <br />
+          </fieldset>
+        <label>Card number
+          <input id="card_number" name="card_number" type="text" />
+        </label>
+        <label>Expiration date
+          <input id="expiration" name="expiration" type="text" />
+        </label>
+        <br />
+        <input class="submit" type="submit" value="Submit" />
+        <br />
+      </fieldset>
+      
+    </form>
+  </body>
+  
+</html>

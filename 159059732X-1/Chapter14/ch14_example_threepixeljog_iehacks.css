@@ -1,0 +1,9 @@
+/* fix three pixel jog bug */
+
+#floated {
+	margin-right: -3px;
+}
+#notfloated {
+	height: 1%;
+	margin-left: 297px;
+}

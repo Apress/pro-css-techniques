@@ -1,0 +1,42 @@
+body {
+    font-family:  "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    font-size:   62.5%;
+    color:  #333;
+}
+
+form {
+    margin:  3em auto;
+    width:  75%;
+}
+
+fieldset {
+    background-color:  #dfdfdf;
+    border:  1px solid #ccc;
+    margin:  2em 0;
+    padding:  1em;
+}
+
+label {
+    display:  block;
+    font-weight:  bold;
+}
+
+input {
+    margin:  0 0 .5em 0;
+}
+
+legend {
+    font-size:  1.4em;
+    font-weight:  bold;
+    position:  relative;
+    top:  -.4em;
+}
+
+fieldset fieldset {
+    background-color:  #efefef;
+    margin:  1em 0;
+}
+
+fieldset fieldset legend {
+    font-size:  1.2em;
+}
